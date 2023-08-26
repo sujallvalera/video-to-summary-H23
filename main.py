@@ -7,11 +7,11 @@ env_vars = dotenv_values(".env")
 path = env_vars["FILE_PATH"]
 print("Converting video into audio...")
 clip = mp.VideoFileClip(path)
-clip.audio.write_audiofile(r"filename.wav")
+clip.audio.write_audiofile(r"filename.mp3")
 
 # using openai's whisper tool to convert the audio file to text
 openai.api_key = env_vars["API_KEY"]
-audio_file = open("filename.wav", "rb")
+audio_file = open("filename.mp3", "rb")
 print("Converting audio to text...")
 trans = openai.Audio.transcribe('whisper-1', audio_file)
 text = trans["text"]
