@@ -4,8 +4,9 @@ from dotenv import dotenv_values
 env_vars = dotenv_values(".env")
 
 # initialization for conversion of video to audio using moviepy
+path = env_vars["FILE_PATH"]
 print("Converting video into audio...")
-clip = mp.VideoFileClip(r"C:\\Users\\HP\\Downloads\\The World Needs More Of You _ 1 Minute Motivational Speech.mp4")
+clip = mp.VideoFileClip(path)
 clip.audio.write_audiofile(r"filename.wav")
 
 # using openai's whisper tool to convert the audio file to text
