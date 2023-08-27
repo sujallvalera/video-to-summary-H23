@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video to text converter</title>
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+            background: url('bg.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            font-size: 30px;
+            transition: 2s;
+        }
+        h1:hover{
+            font-size: 40px;
+        }
+
+
+        h2 {
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 2s;
+            /* font-size:xx-large; */
+        }
+        h2:hover{
+            font-size: 30px;
+        }
+
+        .box {
+            /* border: 200px solid black;
+            margin: 34px 200px 0px 200px;
+            background-color: white;
+            background: white; */
+            width: 510px;
+            height: 375px;
+            /* border: 5px solid aquamarine; */
+            /* padding: 50px; */
+            margin: 43px 475px 9px 380px;
+            border-radius: 20px;
+            background: linear-gradient(to right,white,rgb(174, 172, 172));
+            /* box-sizing: border-box; */
+            display: flex;
+            justify-content: center;
+            /* background: white; */
+        }
+        .formcss{
+            margin-top: 31%;
+        }
+        .center{
+            text-align: center;
+            margin: 105px 0px 70px 65px;
+        }
+        .element2{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .element2 button{
+            border-radius: 10px;
+            transition: 1.5s;
+        }
+        .element1{
+            display: flex;
+            padding-left: 74px;
+            margin-bottom: 30px;
+        }
+        .element2 button:hover{
+            color: white;
+            background-color: black;
+        }
+        .element1 input{
+            border-radius: 10px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>The Mat</h1>
+    <h2>Video To Summary</h2>
+    <div class="box">
+        <div class="formcss">
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <div class="element1"><input type="file" name="videoFile" accept="video/*"></div>
+                <div class="element2"><button type="submit">Upload Video</button></div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
