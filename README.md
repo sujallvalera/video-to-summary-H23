@@ -11,7 +11,7 @@
 - There are 2 types of programs:
     - Interpreter version: Which could be run on the machine (`main.py`) itself. 
     - Website version: Which will be deployed for further uses. To run the model on your machine use Python Flask.
-        - Go to the `website` folder, clone it, just run the `server.py` file on your machine a Flask framework will be launched. In it you can add you respected file and after a frw seconds it will display the summary. 
+        - Go to the `website` folder, clone it, just run the `server.py` file on your machine a Flask framework will be launched. In it you can add you respected file and after a few seconds it will display the summary. 
 
 # License
 This project is licensed under the MIT License. See the `LICENSE` file for more information.
