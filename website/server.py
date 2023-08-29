@@ -67,7 +67,7 @@ def script():
         model="gpt-3.5-turbo",
         messages=[
             {"role": "user",
-             "content": f"I want you to summarize the following to a small short actually very short and sweet summary which should cover all the points of the given text.  If there are any dates mentioned in it, I want you to note it down in the ummary an for what purpose it is used. Here's the text - {text}"}
+             "content": f"I want you to summarize the following to a small short actually very short and sweet summary which should cover all the points of the given text. If there are any dates mentioned in it, I want you to note it down in the summary and for what purpose it is used. Here's the text - {text}"}
         ]
     )
     summary = completion.choices[0].message["content"]
